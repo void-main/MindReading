@@ -1,8 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="magic_mime_string">application/vnd.me.voidmain.nfc.mindreading</string>
 
     <string name="app_name">MindReading</string>
-    <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="title_activity_write">WriteActivity</string>
+    <string name="title_activity_handle">HandleActivity</string>
+    
+	<string name="write_tag_hint">"Casting magic to your tag, please place your phone on the tag."</string>
+    <string name="write_tag_success">The magic is on!</string>
+    <string name="start_cast_magic">Give me the magic!</string>
+    
+    <string name="reading_mind_hint">"I'm reading your mind!"</string>
 
 </resources>

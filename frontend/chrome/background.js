@@ -9,5 +9,5 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 });
 
 chrome.tabs.onCreated.addListener(function(tabId, changeInfo, tab) {
-  putToCloud(tag.url);
+  putToCloud(tab.url);
 });
