@@ -1,0 +1,13 @@
+{
+"manifest_version": 2,
+"name": "MindReading",
+"version": "0.1",
+"description": "This extensions helps your phone to read your Chrome's mind",
+"icons": {
+	"48": "mindreadingicon_64x64.png"
+},
+"background": {
+	"scripts": ["background.js"]
+},
+"permissions": [ "tabs", "http://*/*", "https://*/*" ]
+}
