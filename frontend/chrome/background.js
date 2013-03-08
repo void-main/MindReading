@@ -1,10 +1,9 @@
 var putToCloud = function(url) {
-  if (url.substring(0, 4) != "http" && url.substring(0, 5) != "https") {
-    return;
+  if (url.substring(0, 4) == "http" || url.substring(0, 5) != "https") {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open('PUT', 'http://mindreading.heroku.com/voidmain/test?url=' + url);
+    xmlhttp.send(null);
   }
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open('PUT', 'http://mindreading.heroku.com/voidmain/test?url=' + url);
-  xmlhttp.send(null);
 };
 
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
